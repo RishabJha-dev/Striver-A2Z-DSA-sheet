@@ -1,0 +1,10 @@
+class Solution {
+public:
+    int largestElement(vector<int>& arr) {
+        int n = arr.size(),mx = arr[0];
+        for(int i=0;i<n;i++){
+            if (mx<arr[i]) mx = arr[i];
+        }
+        return mx;
+    }
+};
